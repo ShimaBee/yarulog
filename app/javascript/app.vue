@@ -5,13 +5,14 @@
 </template>
 
 <script>
-export default {
-  data: function () {
-    return {
-      message: "Hello Vue!"
+  export default {
+    data: function () {
+      return {
+        // この文字列が画面に表示されている
+        message: "Hello"
+      }
     }
   }
-}
 </script>
 
 <style scoped>
