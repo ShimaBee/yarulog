@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Name やるlog
 
-Things you may want to cover:
+* Overview 自分のやると決めたことをどんどん記入し、そのlogをとる。
 
-* Ruby version
+* Description 自分のやりたことを記録し、実際にやったのかの結果まで記録することで自分の傾向を知ることができる自己分析ツール。
 
-* System dependencies
+* Ruby version 2.4.0
 
-* Configuration
+* Rails 5.0.1.beta1
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Database pg
