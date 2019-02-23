@@ -58,3 +58,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'webpacker' ,github: 'rails/webpacker'
 
 gem 'foreman'
+gem 'jquery-rails'
+gem 'materialize-sass'
+gem 'material_icons'
