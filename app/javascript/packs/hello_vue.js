@@ -18,6 +18,46 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log(app)
 })
 
+(function() {
+  'use strict';
+
+  var likeComponent = Vue.extend({
+    props: {
+      message: {
+        type: String,
+        default: 'Like'
+      }
+    },
+    data: function() {
+      return {
+        count: 0
+      }
+    },
+    template: '<button @click="countUp">{{ message }} {{ count }}</button>',
+    methods: {
+      countUp: function() {
+        this.count++;
+        this.$emit('increment');
+      }
+    }
+  });
+
+  var app = new Vue({
+    el: '#app',
+    components: {
+      'like-component': likeComponent
+    },
+    data: {
+      total: 0
+    },
+    methods: {
+      incrementTotal: function() {
+        this.total++;
+      }
+    }
+  });
+
+})();
 
 // The above code uses Vue without the compiler, which means you cannot
 // use Vue to target elements in your existing html templates. You would
